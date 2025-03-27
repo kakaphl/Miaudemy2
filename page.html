@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiauCademy</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>MiauCademy</h1>
+        <p>Se divirta estudando para provas e vestibulares!</p>
+    </header>
+
+    <section class="games">
+        <div class="game-card">
+            <h2>Quiz de História</h2>
+            <p>Teste seus conhecimentos em História com esse quiz interativo. </p>
+            <button onclick="startGame('games/quiz-historia.html')">Jogar</button>
+        </div>
+        <div class="game-card">
+            <h2>Desafio de Matemática</h2>
+            <p>Resolva equações e melhore suas habilidades matemáticas!</p>
+            <button onclick="startGame('games/desafio-matematica.html')">Jogar</button>
+        </div>
+        <div class="game-card">
+            <h2>Palavras Cruzadas</h2>
+            <p>Expanda seu vocabulário e aprenda novos conceitos.</p>
+            <button onclick="startGame('games/palavras-cruzadas.html')">Jogar</button>
+        </div>
+    </section>
+
+    <section class="ranking">
+        <h2>Ranking de Alunos</h2>
+        <ul id="ranking-list">
+            <!-- O ranking será carregado aqui dinamicamente -->
+        </ul>
+    </section>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/ranking.js"></script>
+</body>
+</html>
